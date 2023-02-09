@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kelimeEkleme">
+
+    <EditText
+        android:id="@+id/editTextKelime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/kelime_edittext_shape"
+        android:drawableStart="@drawable/kelime_edittext_startdrawavle"
+        android:ems="10"
+        android:hint="Kelime"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/editTextKarsilik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextKarsilik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/kelime_edittext_shape"
+        android:drawableStart="@drawable/kelime_edittext_startdrawavle"
+        android:ems="10"
+        android:hint="Karşılık"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/editTextOrnekCumle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKelime" />
+
+    <EditText
+        android:id="@+id/editTextOrnekCumle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="352dp"
+        android:background="@drawable/kelime_edittext_shape"
+        android:drawableStart="@drawable/kelime_edittext_startdrawavle"
+        android:ems="10"
+        android:hint="Örnek Cümle"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextKarsilik" />
+
+    <Button
+        android:id="@+id/buttonOnay"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="35dp"
+        android:text=""
+        android:drawableStart="@drawable/kayit_onay_button_icon"
+        android:padding="5dp"
+        android:background="@drawable/kayit_onay_button_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
